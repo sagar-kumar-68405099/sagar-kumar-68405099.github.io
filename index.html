@@ -1,0 +1,753 @@
+<title>Sagar Kumar</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Sagar Kumar: senior software engineer and solution architect with 9+ years in digital banking, FinTech, SupTech and applied AI. Based in Karachi, open to international roles.">
+<meta property="og:title" content="Sagar Kumar | Senior Software Engineer and Solution Architect">
+<meta property="og:description" content="Enterprise software, digital banking architecture, SupTech and applied AI.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Sagar Kumar","jobTitle":"Senior Software Engineer and Solution Architect","address":{"@type":"PostalAddress","addressLocality":"Karachi","addressCountry":"PK"},"sameAs":["https://www.linkedin.com/in/sagar-kumar-68405099/"]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: sticky glass nav, a two-column hero over a faint node network, then alternating bands of cards, a career timeline, a tabbed case-study reader and tabbed architecture diagrams. Single dark look by design. */
+:root{
+  --bg:#07111F; --bg-2:#0B1728; --panel:rgba(148,163,184,.06); --panel-hi:rgba(148,163,184,.11);
+  --line:rgba(148,163,184,.18); --text:#F8FAFC; --muted:#A7B4C5;
+  --accent:#38BDF8; --accent-2:#6366F1; --accent-soft:rgba(56,189,248,.12); --violet-soft:rgba(99,102,241,.16);
+  --on-accent:#04101D; --header-bg:rgba(7,17,31,.86);
+  --font-display:'Space Grotesk',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --font-body:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --font-mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:88px}
+body{background:var(--bg);color:var(--text);font:400 16px/1.65 var(--font-body);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:60}
+h1,h2,h3,h4,p,ul,ol{margin:0}
+ul,ol{padding:0;list-style:none}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{width:100%;max-width:1200px;margin-inline:auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+[hidden]{display:none!important}
+.skip{position:absolute;left:-999px;top:8px;background:var(--accent);color:var(--on-accent);padding:8px 14px;border-radius:8px;z-index:100;font-weight:600}
+.skip:focus{left:16px}
+
+/* header */
+.site-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--header-bg);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:600 17px var(--font-display);letter-spacing:-.01em}
+.mark{display:grid;place-items:center;width:34px;height:34px;border-radius:9px;background:linear-gradient(140deg,var(--accent),var(--accent-2));color:var(--on-accent);font:700 14px var(--font-display)}
+.nav-toggle{display:none;align-items:center;gap:8px;padding:9px 14px;border-radius:9px;border:1px solid var(--line);background:var(--panel);color:var(--text);font:500 14px var(--font-body);cursor:pointer}
+#nav ul{display:flex;gap:2px}
+#nav a{position:relative;display:block;padding:8px 11px;border-radius:8px;color:var(--muted);text-decoration:none;font-size:14.5px;font-weight:500;transition:color .2s}
+#nav a:hover{color:var(--text)}
+#nav a::after{content:"";position:absolute;left:11px;right:11px;bottom:2px;height:2px;border-radius:2px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .25s}
+#nav a[aria-current="true"]{color:var(--text)}
+#nav a[aria-current="true"]::after{transform:scaleX(1)}
+@media (max-width:1060px){
+  .nav-toggle{display:inline-flex}
+  #nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--bg-2);border-bottom:1px solid var(--line);padding:10px max(16px,env(safe-area-inset-right,0px)) 14px max(16px,env(safe-area-inset-left,0px))}
+  #nav.open{display:block}
+  #nav ul{flex-direction:column}
+  #nav a{padding:12px 10px;font-size:16px}
+  #nav a::after{display:none}
+  #nav a[aria-current="true"]{background:var(--accent-soft);color:var(--text)}
+}
+
+/* shared */
+.section{padding-block:clamp(56px,9vw,104px)}
+.band{background:var(--bg-2);border-block:1px solid var(--line)}
+.eyebrow{font:500 12.5px var(--font-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+h2{font:600 clamp(28px,4vw,44px)/1.1 var(--font-display);letter-spacing:-.02em;text-wrap:balance}
+h3{font:600 19px/1.3 var(--font-display);letter-spacing:-.01em}
+.lead{color:var(--muted);max-width:64ch;margin-top:16px;font-size:17px}
+.head{margin-bottom:clamp(28px,4vw,48px)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px;transition:transform .25s,border-color .25s,background .25s}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:500 12.5px var(--font-mono);padding:4px 10px;border:1px solid var(--line);border-radius:999px;color:var(--muted);white-space:nowrap}
+.chip.hi{color:var(--accent);border-color:rgba(56,189,248,.4);background:var(--accent-soft)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:10px;border:1px solid var(--line);background:transparent;color:var(--text);font:600 15px var(--font-body);text-decoration:none;cursor:pointer;transition:transform .2s,background .2s,border-color .2s,filter .2s}
+.btn:hover{background:var(--panel-hi);border-color:rgba(56,189,248,.5)}
+.btn-primary{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.btn-primary:hover{background:var(--accent);filter:brightness(1.08)}
+.note{font:400 13px/1.5 var(--font-mono);color:var(--muted)}
+@media (hover:hover) and (prefers-reduced-motion:no-preference){.card.lift:hover{transform:translateY(-4px);border-color:rgba(56,189,248,.45);background:var(--panel-hi)}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding-block:clamp(44px,8vw,92px)}
+#net{position:absolute;inset:0;width:100%;height:100%;opacity:.6;pointer-events:none}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(60% 70% at 85% 30%,var(--violet-soft),transparent 70%),radial-gradient(50% 60% at 10% 90%,var(--accent-soft),transparent 70%);pointer-events:none}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:clamp(32px,5vw,64px);align-items:center}
+.kicker{display:flex;flex-wrap:wrap;gap:6px 16px;font:500 13px var(--font-mono);color:var(--muted);margin-bottom:22px}
+.kicker b{color:var(--accent);font-weight:500}
+h1{font:700 clamp(34px,5.6vw,64px)/1.05 var(--font-display);letter-spacing:-.03em;text-wrap:balance}
+h1 em{font-style:normal;color:var(--accent)}
+.hero .lead{font-size:clamp(16px,1.6vw,19px);max-width:58ch;margin-top:22px}
+.focus{margin-top:26px}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.portrait-col{display:grid;gap:14px;justify-items:center}
+.portrait{position:relative;width:100%;max-width:330px;aspect-ratio:4/5;border-radius:22px;border:1px solid var(--line);background:radial-gradient(80% 60% at 30% 20%,var(--accent-soft),transparent 70%),radial-gradient(70% 60% at 80% 90%,var(--violet-soft),transparent 70%),var(--bg-2);display:grid;place-items:center;overflow:hidden}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:center 25%;display:block}
+.now{width:100%;max-width:640px;margin-top:26px;padding:16px 18px;border-radius:14px;border:1px solid var(--line);background:var(--panel);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.now .label{font:500 11.5px var(--font-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.now p{margin-top:4px;font-size:14.5px;color:var(--text);line-height:1.5}
+.now.open-box{margin-top:14px;border-left:3px solid var(--accent);background:var(--accent-soft)}
+.now.open-box strong{color:var(--accent)}
+.now-strip{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-bottom:clamp(28px,5vw,48px)}
+.now-strip .now{max-width:none;margin-top:0}
+@media (max-width:760px){.now-strip{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:880px){.hero-grid{grid-template-columns:minmax(0,1fr);row-gap:26px}.portrait-col{display:contents}.portrait{grid-row:1}.hero-grid>div:first-child{grid-row:2}}
+
+/* overview */
+.overview{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(28px,5vw,64px);align-items:start}
+.overview h2{text-wrap:pretty}
+.overview .lead{max-width:none;text-align:justify;hyphens:auto}
+.pillars{width:100%;margin-top:28px;border-collapse:collapse}
+.pillars tr{border-top:1px solid var(--line)}
+.pillars th,.pillars td{padding:12px 0;vertical-align:top}
+.pillars th{width:1%;white-space:nowrap;padding-right:24px;text-align:left;font:600 15px var(--font-display);color:var(--text)}
+.pillars td{text-align:justify;hyphens:auto;color:var(--muted);font-size:15px}
+@media (max-width:700px){.pillars th{white-space:normal}}
+
+/* expertise */
+.grid-exp{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.exp .ic{display:grid;place-items:center;width:42px;height:42px;border-radius:11px;background:var(--accent-soft);color:var(--accent);margin-bottom:16px}
+.exp .ic svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.exp p{color:var(--muted);font-size:15px;margin-top:8px}
+.exp .tag{display:inline-block;margin-top:14px}
+.skills-head{margin-top:clamp(56px,8vw,88px)}
+.skills{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px;margin-top:28px}
+.skills h3{font-size:15px;font:500 12.5px var(--font-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.skills .explore{border-style:dashed;border-color:rgba(99,102,241,.5);background:var(--violet-soft)}
+.skills .explore h3{color:#A5B4FC}
+.skills .explore p{color:var(--muted);font-size:14px;margin-top:14px}
+
+/* experience */
+.timeline{position:relative;display:grid;gap:20px}
+.job{position:relative;padding-left:36px}
+.job::before{content:"";position:absolute;left:7px;top:26px;bottom:-26px;width:1px;background:var(--line)}
+.job:last-child::before{display:none}
+.job::after{content:"";position:absolute;left:0;top:22px;width:15px;height:15px;border-radius:50%;background:var(--bg);border:2px solid var(--accent)}
+.job.now-job::after{background:var(--accent);box-shadow:0 0 0 5px var(--accent-soft)}
+.job-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;align-items:flex-start}
+.job-period{font:500 12.5px var(--font-mono);color:var(--accent);letter-spacing:.06em}
+.job h3{margin-top:6px;font-size:21px}
+.job-org{color:var(--muted);font-size:15px;margin-top:2px}
+.toggle{padding:8px 14px;border-radius:9px;border:1px solid var(--line);background:transparent;color:var(--text);font:500 13.5px var(--font-body);cursor:pointer}
+.toggle:hover{border-color:var(--accent);background:var(--accent-soft)}
+.job-arc{margin-top:14px;color:var(--text)}
+.job-arc,.job-impact,.job .dots li{text-align:justify;hyphens:auto}
+.job-impact{margin-top:12px;padding:12px 14px;border-radius:10px;background:var(--accent-soft);border:1px solid rgba(56,189,248,.25);font-size:15px}
+.job-impact b{font:500 11.5px var(--font-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-right:8px}
+.job-body{margin-top:20px;display:grid;gap:20px}
+.cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.job-body h4,.case h4{font:500 12px var(--font-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.dots li{position:relative;padding-left:18px;color:var(--muted);font-size:15px;margin-top:8px}
+.dots li::before{content:"";position:absolute;left:0;top:.68em;width:6px;height:6px;border-radius:50%;background:var(--accent);opacity:.7}
+@media (max-width:760px){.cols{grid-template-columns:minmax(0,1fr)}.job{padding-left:28px}}
+
+/* projects */
+.proj-lead{max-width:none;text-align:justify;hyphens:auto}
+.cases{display:grid;grid-template-columns:260px minmax(0,1fr);gap:24px;align-items:start}
+.case-tabs{display:grid;gap:8px;position:sticky;top:96px}
+.tab{display:block;width:100%;text-align:left;padding:14px 16px;border-radius:12px;border:1px solid var(--line);background:var(--panel);color:var(--muted);font:500 15px/1.35 var(--font-body);cursor:pointer;transition:background .2s,border-color .2s,color .2s}
+.tab small{display:block;margin-top:4px;font:400 11.5px var(--font-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);opacity:.8}
+.tab:hover{color:var(--text);border-color:rgba(56,189,248,.4)}
+.tab[aria-selected="true"]{color:var(--text);background:var(--accent-soft);border-color:rgba(56,189,248,.55)}
+.case{padding:clamp(20px,3vw,32px)}
+.case-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;align-items:flex-start}
+.case h3{font-size:clamp(22px,2.6vw,28px)}
+.case .blurb{color:var(--muted);margin-top:10px;max-width:none;text-align:justify;hyphens:auto}
+.case p,.case .dots li{text-align:justify;hyphens:auto}
+.case-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:26px}
+.block{padding:18px;border-radius:12px;border:1px solid var(--line);background:rgba(7,17,31,.45)}
+.block p{color:var(--text);font-size:15px}
+.block.span{grid-column:1/-1}
+.block.win{border-color:rgba(56,189,248,.4);background:var(--accent-soft)}
+.block.win h4{color:var(--accent)}
+.block .btn{margin-top:14px;padding:9px 14px;font-size:14px}
+@media (max-width:900px){
+  .cases{grid-template-columns:minmax(0,1fr)}
+  .case-tabs{position:static;display:flex;overflow-x:auto;gap:8px;padding-bottom:6px}
+  .tab{width:auto;min-width:200px;flex:0 0 auto}
+}
+@media (max-width:700px){.case-grid{grid-template-columns:minmax(0,1fr)}}
+
+/* architecture */
+.arch-tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.pill{padding:9px 16px;border-radius:999px;border:1px solid var(--line);background:var(--panel);color:var(--muted);font:500 14px var(--font-body);cursor:pointer;transition:background .2s,border-color .2s,color .2s}
+.pill:hover{color:var(--text);border-color:rgba(56,189,248,.4)}
+.pill[aria-selected="true"]{color:var(--text);background:var(--accent-soft);border-color:rgba(56,189,248,.55)}
+.arch{padding:clamp(20px,3vw,32px)}
+.arch-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;align-items:flex-start}
+.arch .sum{color:var(--muted);max-width:66ch;margin-top:10px}
+.diagram{margin-top:24px;display:grid;gap:10px;overflow-x:auto}
+.lane{display:grid;grid-template-columns:104px minmax(0,1fr);gap:14px;align-items:center;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:rgba(7,17,31,.5)}
+.lane-label{font:500 11.5px var(--font-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.node{padding:8px 13px;border-radius:9px;border:1px solid var(--line);background:var(--panel-hi);font-size:14px;color:var(--text)}
+.node.hi{border-color:rgba(56,189,248,.6);background:var(--accent-soft);color:var(--text)}
+.arrow{color:var(--accent);font-size:15px}
+.trade{margin-top:26px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.trade li{padding:16px;border-radius:12px;border:1px solid var(--line);background:var(--panel);font-size:14.5px;color:var(--muted)}
+.trade b{display:block;color:var(--text);font:600 15px var(--font-display);margin-bottom:6px}
+.trade-h{margin-top:28px;font:500 12px var(--font-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+@media (max-width:820px){.trade{grid-template-columns:minmax(0,1fr)}.lane{grid-template-columns:minmax(0,1fr);gap:8px}}
+
+/* insights */
+#insights .lead{max-width:none;text-align:justify;hyphens:auto}
+.grid-ins{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:16px}
+.ins .cat{font:500 11.5px var(--font-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.ins h3{margin-top:10px;font-size:18px}
+.ins p{margin-top:8px;color:var(--muted);font-size:15px;text-align:justify;hyphens:auto}
+.ins .meta{margin-top:16px;display:flex;justify-content:space-between;gap:10px;font:400 12.5px var(--font-mono);color:var(--muted)}
+.ins a{color:var(--accent);text-decoration:none}
+.ins a:hover{text-decoration:underline}
+
+/* education */
+.grid-edu{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.edu h3{font-size:14px;font:500 12.5px var(--font-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:16px}
+.edu .big{font:600 20px/1.3 var(--font-display)}
+.edu .sub{color:var(--muted);font-size:15px;margin-top:4px}
+.edu li{padding:11px 0;border-top:1px solid var(--line);font-size:15px}
+.edu li:first-child{border-top:0;padding-top:0}
+.edu li span{display:block;color:var(--muted);font-size:13.5px;margin-top:2px}
+.edu .rule{margin-top:18px;padding-top:16px;border-top:1px solid var(--line)}
+@media (max-width:960px){.grid-edu{grid-template-columns:minmax(0,1fr)}}
+
+footer{padding-block:32px calc(32px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px}
+.to-top{position:fixed;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:40;width:46px;height:46px;border-radius:50%;border:1px solid rgba(56,189,248,.5);background:var(--header-bg);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:var(--accent);cursor:pointer;display:grid;place-items:center}
+.to-top svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.to-top:hover{background:var(--accent-soft)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+</style>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="#home" aria-label="Sagar Kumar, home"><span class="mark" aria-hidden="true">SK</span><span>Sagar Kumar</span></a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" aria-label="Primary">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#insights">Research &amp; Insights</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero" id="home" aria-labelledby="h-hero">
+  <canvas id="net" aria-hidden="true"></canvas>
+  <div class="wrap hero-grid">
+    <div>
+      <h1 id="h-hero">Sagar <em>Kumar</em></h1>
+      <h2 id="h-hero">Research, Design & Build Scalable AI-Powered Solutions</h2>
+
+      <!-- <p class="lead">Technology professional with 9+ years of experience building enterprise software, architecting digital banking solutions, and exploring the transformative potential of Artificial Intelligence, Agentic AI, and emerging technologies.</p> -->
+
+<ul class="chips focus" aria-label="Professional and Research Focus Areas">
+  <li class="chip hi">9+ Years of Professional Experience</li>
+  <li class="chip hi">Artificial Intelligence &amp; Machine Learning</li>
+  <li class="chip hi">Generative AI &amp; Agentic AI</li>
+  <li class="chip hi">Research &amp; Innovation</li>
+  <li class="chip hi">Enterprise Architecture</li>
+  <li class="chip hi">Cloud &amp; Distributed-Systems</li>
+  <li class="chip hi">FinTech &amp; Digital Banking</li>
+  <li class="chip hi">Software Engineering</li>
+  <li class="chip hi">Responsible &amp; Human-Centred AI</li>
+</ul>
+
+
+      <div class="actions" id="heroActions">
+        <a class="btn" href="#projects">Explore My Work</a>
+      </div>
+    </div>
+
+    <div class="portrait-col">
+      <div class="portrait">
+        <img src="pic.jpeg" alt="Sagar Kumar" width="333" height="333" decoding="async">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section band" id="about" aria-labelledby="h-about">
+  <div class="wrap">
+    <div class="now-strip">
+      <div class="now">
+        <p class="label">Currently</p>
+        <p>Leading digital banking innovation through applied research, emerging technologies, and AI-driven solutions at one of the leading banks in Pakistan</p>
+      </div>
+      <div class="now open-box">
+        <p class="label">Availability</p>
+        <p><strong>Open to global opportunities</strong> in Artificial Intelligence, Research &amp; Innovation, Enterprise Architecture, and Data &amp; Software Engineering.</p>
+      </div>
+    </div>
+  </div>
+  <div class="wrap overview">
+    <div>
+      <p class="eyebrow">Professional overview</p>
+      <h2 id="h-about">Engineering Technology. Advancing Research. Enabling Innovation.</h2>
+      <p class="lead">My journey spans over nine years across software engineering, enterprise architecture, digital banking, and technology-driven financial services. From developing ATM and core banking solutions to architecting digital banking platforms and contributing to regulatory technology initiatives, I have gained perspectives as an engineer, technology leader, and banking supervisor. Today, I aim to build on this experience through advanced research, continuous learning, and the development of intelligent, scalable, and responsible technology solutions.</p>
+      <table class="pillars">
+        <tbody>
+          <tr><th scope="row">9+ Years of Experience</th><td>Software engineering, enterprise systems, digital financial services, and technology innovation.</td></tr>
+          <tr><th scope="row">Financial Technology Expertise</th><td>Hands-on experience across digital banking, core banking, ATM networks, payment systems, and financial infrastructure, from both institutional and regulatory perspectives.</td></tr>
+          <tr><th scope="row">Architecture &amp; Engineering</th><td>Designing and delivering enterprise-grade solutions, translating complex requirements into scalable architectures through HLD/LLD, technical reviews, and non-functional engineering.</td></tr>
+          <tr><th scope="row">AI &amp; Applied Research</th><td>Exploring and applying Machine Learning, Deep Learning, NLP, Generative AI, LLMs, RAG, and Agentic AI across fraud detection, predictive analytics, intelligent automation, regulatory intelligence, and decision-support systems.</td></tr>
+          <tr><th scope="row">Emerging AI Research Interests</th><td>Explainable and Responsible AI, Trustworthy AI, Human-Centred AI, Multi-Agent Systems, AI Security, Privacy-Preserving Machine Learning, and Human-AI Collaboration.</td></tr>
+          <tr><th scope="row">Technical Leadership &amp; Collaboration</th><td>Leading and mentoring engineering teams, coordinating cross-functional stakeholders, and driving technology delivery.</td></tr>
+          <tr><th scope="row">Research &amp; Innovation Aspirations</th><td>Advancing knowledge in Artificial Intelligence and intelligent systems, bridging academic research with practical applications in financial services, enterprise technology, and other real-world domains.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="expertise" aria-labelledby="h-exp">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Areas of expertise</p>
+      <h2 id="h-exp">What I bring</h2>
+      <!-- <p class="lead">Twelve areas that connect enterprise engineering with financial services and applied AI. Items marked Exploring are areas I am actively developing.</p> -->
+    </div>
+    <div class="grid-exp" id="expGrid"></div>
+
+    <div class="head skills-head">
+      <p class="eyebrow">Technology stack</p>
+      <h2>Tools I use, and tools I am learning</h2>
+    </div>
+    <div class="skills" id="skills"></div>
+  </div>
+</section>
+
+<section class="section band" id="experience">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Professional experience</p>
+    </div>
+    <ol class="timeline" id="timeline"></ol>
+  </div>
+</section>
+
+<section class="section" id="education" aria-labelledby="h-edu">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Education and certifications</p>
+      <h2 id="h-edu">Foundations and continuing development</h2>
+    </div>
+    <div class="grid-edu" id="eduGrid"></div>
+  </div>
+</section>
+
+<section class="section" id="projects">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Featured projects and case studies</p>
+      <p class="lead proj-lead">Case studies are written at a conceptual level. They contain no confidential architecture, source code, internal systems or customer data. Figures come from my CV.</p>
+    </div>
+    <div class="cases">
+      <div class="case-tabs" id="caseTabs" role="tablist" aria-label="Case studies" aria-orientation="vertical"></div>
+      <article class="card case" id="casePanel" role="tabpanel" tabindex="0"></article>
+    </div>
+  </div>
+</section>
+
+<section class="section band" id="architecture" aria-labelledby="h-arch" hidden>
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Architecture and technical insights</p>
+      <h2 id="h-arch">How I think about system design</h2>
+      <p class="lead">Seven reference patterns, each with the trade-offs I weigh when choosing it. Every diagram is a conceptual example and does not depict any employer's system.</p>
+    </div>
+    <div class="arch-tabs" id="archTabs" role="tablist" aria-label="Architecture topics"></div>
+    <article class="card arch" id="archPanel" role="tabpanel" tabindex="0"></article>
+  </div>
+</section>
+
+<section class="section" id="insights" aria-labelledby="h-ins">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Research &amp; Insights</p>
+      <h2 id="h-ins">Writing and research topics</h2>
+      <p class="lead">Subjects I write and research on. Article dates and links appear on each card as pieces are published.</p>
+    </div>
+    <div class="grid-ins" id="insGrid"></div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; <span id="year">2026</span> Sagar Kumar. Karachi, Pakistan.</span>
+    <span>Case studies and diagrams are conceptual and contain no confidential employer information.</span>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="Back to top" hidden>
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script>
+/* ---------------------------------------------------------------
+   EDIT HERE. All site content lives in these objects.
+   Add a project, role, article or certificate by adding an item.
+---------------------------------------------------------------- */
+const CONFIG = {
+  name: 'Sagar Kumar',
+  linkedin: 'https://www.linkedin.com/in/sagar-kumar-68405099/',
+  github: '',   /* paste your GitHub profile URL to show the link */
+  location: 'Karachi, Pakistan'
+};
+
+const ICONS = {
+  ai:'<path d="M12 3l1.8 4.7 4.7 1.8-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8z"/><path d="M19 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/>',
+  agent:'<circle cx="5" cy="12" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="19" cy="18" r="2"/><path d="M7 12h4l6-5M11 12l6 5"/>',
+  llm:'<path d="M4 5h16v11H10l-5 4v-4H4z"/><path d="M8 10h8M8 13h5"/>',
+  rag:'<path d="M4 6c0-1.7 3.6-3 8-3s8 1.3 8 3-3.6 3-8 3-8-1.3-8-3z"/><path d="M4 6v6c0 1.7 3.6 3 8 3M4 12v6c0 1.7 3.6 3 8 3"/><circle cx="17.5" cy="17.5" r="3"/><path d="M19.7 19.7L22 22"/>',
+  arch:'<path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/>',
+  micro:'<rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/>',
+  api:'<path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/>',
+  bank:'<path d="M3 10l9-6 9 6M5 10v8M9 10v8M15 10v8M19 10v8M3 20h18"/>',
+  shield:'<path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/>',
+  radar:'<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><path d="M12 12l6-6"/>',
+  cloud:'<path d="M7 18a4 4 0 010-8 5.5 5.5 0 0110.5 1.5A3.3 3.3 0 0117 18z"/>',
+  flag:'<path d="M5 21V4M5 4h12l-2 4 2 4H5"/>'
+};
+
+const EXPERTISE = [
+  {i:'ai', t:'Artificial Intelligence & Generative AI', d:'Machine learning, NLP and generative AI applied to financial-sector problems such as fraud risk and regulatory monitoring.'},
+  {i:'agent', t:'Agentic AI & Autonomous Systems', d:'Agent designs with tool use, guardrails and human approval, shaped for regulated environments.', x:true},
+  {i:'llm', t:'Large Language Models (LLMs)', d:'LLM integrations, prompt engineering and Hugging Face Transformers across the Java stack with Spring AI and the Python stack with FastAPI, LangChain and PyTorch.'},
+  {i:'rag', t:'Retrieval-Augmented Generation (RAG)', d:'Grounding model answers in enterprise knowledge with retrieval, access control and source citations.', x:true},
+  {i:'arch', t:'Enterprise Software Architecture', d:'HLD and LLD, architecture reviews and ownership of performance, scalability, availability and security requirements.'},
+  {i:'micro', t:'Java & Spring Boot Microservices', d:'Spring Boot, Spring Cloud and Hibernate/JPA services, from design through production support.'},
+  {i:'api', t:'API-First Architecture', d:'REST APIs that connect internal banking platforms and third parties, secured with OAuth 2.0, JWT and TLS.'},
+  {i:'bank', t:'FinTech & Digital Banking', d:'Customer-facing digital banking for 2M+ customers, plus payments, ATM channels and core banking.'},
+  {i:'shield', t:'Regulatory Technology (RegTech)', d:'Turning regulatory rules and reporting into software, informed by the supervisor’s side of the table.'},
+  {i:'radar', t:'Supervisory Technology (SupTech)', d:'Platforms for technology-enabled supervision of 50+ regulated entities and 130,000+ digital channels.'},
+  {i:'cloud', t:'Cloud & Distributed Systems', d:'Kafka, Redis, Docker, Kubernetes and AWS for high-volume, resilient systems.'},
+  {i:'flag', t:'Technology Governance & Transformation', d:'CI/CD adoption, secure engineering practice, team mentoring and assessment of emerging technology.'}
+];
+
+const SKILLS = [
+  {t:'Programming', l:['Java','Python','SQL','PL/SQL','JavaScript','Node.js']},
+  {t:'Backend engineering', l:['Spring Boot','Spring Cloud','Spring AI','Hibernate / JPA','REST APIs','Microservices','FastAPI','SQLAlchemy']},
+  {t:'AI and machine learning', l:['Machine Learning','NLP','LLMs','Generative AI','Text Classification','Prompt Engineering','Hugging Face Transformers']},
+  {t:'Architecture and integration', l:['Solution Architecture','HLD / LLD','API-First Design','Event-Driven Architecture','Enterprise Integrations','Distributed Systems']},
+  {t:'Security', l:['OAuth 2.0','JWT','TLS','OWASP','API Security','Secure Coding','Data Privacy']},
+  {t:'Cloud and DevOps', l:['AWS','Docker','Kubernetes','Jenkins','Git','CI/CD']},
+  {t:'Data and messaging', l:['PostgreSQL','Oracle','SQL Server','NoSQL','Apache Kafka','Redis']},
+  {t:'Delivery and observability', l:['Agile / Scrum','SDLC','Code Reviews','Architecture Reviews','ELK Stack','Production Support','Team Mentoring']},
+  {t:'Currently exploring', x:true, l:['Agentic AI','RAG','Terraform','DynamoDB','Domain-Driven Design'], n:'Active learning areas, not yet part of my production track record.'}
+];
+
+const EXPERIENCE = [
+  {
+    org:'Bank AL Habib Limited', loc:'Karachi', title:'Senior IT Specialist', period:'July 2024 – Present', now:true,
+    arc:'Enterprise Digital Banking | Solution Architecture | AI-Enabled Financial Services — Leading architecture, engineering and delivery of enterprise digital banking platforms and backend systems supporting retail and corporate banking services.',
+    impact:'Digital banking platforms serving <strong>2M+ customers</strong>, approximately <strong>3M daily transactions</strong> across digital banking services, and leadership of a team of <strong>5 software engineers</strong>. Integrated solutions with AI-powered fraud prevention systems that monitored, detected and prevented payment fraud in real time.',
+    resp:['Lead architecture and development of customer-facing digital banking platforms and enterprise backend services.','Drive end-to-end solution delivery, including requirements engineering, HLD/LLD, development, testing, deployment and production support.','Design and integrate RESTful APIs and microservices across internal banking platforms and third-party systems.','Lead engineering teams, conduct code and architecture reviews, and promote engineering best practices.','Define and oversee non-functional requirements covering scalability, performance, availability, resilience and security.','Contribute to AI/ML- and LLM-enabled transaction monitoring, fraud-risk detection and intelligent banking capabilities.'],
+    ach:['Implemented CI/CD pipelines and DevOps practices to streamline deployment and improve release consistency.','Strengthened secure engineering practices, with no critical vulnerabilities remaining open in reported security audits.','Selected for a <strong>3-week intensive Oracle Digital Banking training programme at Oracle Headquarters, Singapore (June 2025)</strong>.'],
+    tech:['Java','Spring Boot','REST APIs','Microservices','Oracle Digital Banking','CI/CD','AI/ML','LLMs']
+  },
+  {
+    org:'State Bank of Pakistan', loc:'Karachi', title:'Inspecting Officer, Information Systems', period:'January 2021 – July 2024',
+    arc:'Supervisory Technology (SupTech) | Regulatory Technology (RegTech) | AI &amp; Data Analytics — Design and development of technology-enabled supervisory solutions for Pakistan\'s central bank, integrating regulatory data, business rules, analytics and intelligent monitoring.',
+    impact:'Technology-enabled supervision covering <strong>50+ regulated entities</strong> including banks, microfinance banks and fintech institutions; monitoring of <strong>130,000+ digital financial channels</strong>; and leadership of a team of <strong>4 developers</strong> delivering regulatory technology solutions. AI/ML models analysed regulatory data to detect anomalies and potential compliance violations, strengthening supervisory oversight.',
+    resp:['Designed and developed enterprise applications supporting financial-sector supervision and regulatory oversight.','Led development of supervisory platforms incorporating regulatory data processing, business rules, analytics and AI/ML-based anomaly and regulatory-violation detection.','Translated complex regulatory and supervisory requirements into technology solutions in collaboration with business, regulatory, security and infrastructure teams.','Applied Python, NLP and Machine Learning techniques to improve regulatory data analysis and identify potential anomalies and compliance violations.','Evaluated emerging technologies, including Cloud Computing, AI/ML and Distributed Ledger Technology (DLT), for financial-sector applications, governance and risk management.','Delivered technical training, documentation and knowledge transfer across multiple divisions.'],
+    ach:['Implemented CI/CD pipelines to standardize and improve application deployment processes.','Selected for emerging technology evaluation and assessment initiatives (<strong>November 2022</strong>).','Contributed to the modernization of technology-enabled financial-sector supervision.'],
+    tech:['Java','Python','Machine Learning','NLP','Data Analytics','SupTech','RegTech','CI/CD']
+  },
+  {
+    org:'National Bank of Pakistan', loc:'Karachi', title:'IT Software Developer', period:'October 2020 – January 2021',
+    arc:'Core Banking Engineering | Enterprise Application Development | Performance Optimization — Developed and enhanced core banking applications, focusing on process optimization, reporting efficiency and integration with enterprise systems.',
+    impact:'Reduced report generation time from <strong>5 days to approximately 90 minutes</strong>, significantly improving operational efficiency.',
+    resp:['Customized and enhanced Java-based core banking solutions in collaboration with business stakeholders.','Developed application enhancements and integrations connecting core banking services with enterprise software systems.','Coordinated with business and QA teams on requirements validation, testing, UAT and production readiness.','Collaborated with infrastructure teams to support application deployment and production operations.'],
+    ach:['Redesigned and optimized reporting modules, reducing processing time from several days to approximately 90 minutes.'],
+    tech:['Java','Core Banking Systems','Reporting Automation','Enterprise Integration']
+  },
+  {
+    org:'Techlogix Pvt. Ltd.', loc:'Karachi', title:'Senior Software Engineer', period:'May 2018 – October 2020',
+    arc:'Enterprise Software Engineering | Digital Banking | Financial Systems Integration — Designed, developed and delivered enterprise banking and digital financial solutions for large-scale financial institutions and consumer ecosystems.',
+    impact:'Digital banking and enterprise solutions serving <strong>38M+ consumers</strong> across banking implementations, with leadership and coordination of a team of <strong>3 software developers</strong>.',
+    resp:['Conducted requirements analysis, solution design, technical demonstrations and product walkthroughs with banking clients.','Developed enterprise application modules using Java, Spring Boot, REST APIs and Oracle technologies.','Designed and integrated backend services with banking platforms and enterprise systems.','Coordinated development activities, technical implementation and delivery with cross-functional teams.','Collaborated with DevOps teams on releases, go-live activities and production support.'],
+    ach:['Promoted to <strong>Senior Software Engineer (July 2019)</strong>.','Recognized as <strong>Achiever of the Month (January 2019)</strong>.','Contributed to enterprise banking implementations supporting large consumer populations.'],
+    tech:['Java','Spring Boot','REST APIs','Oracle Database','Hibernate','Enterprise Integrations']
+  },
+  {
+    org:'TouchPoint Pvt. Ltd.', loc:'Karachi', title:'Professional Services Consultant', period:'March 2017 – April 2018',
+    arc:'ATM &amp; Payment Technology | Banking Infrastructure | Transaction Processing — Started my professional journey developing and deploying ATM software solutions for banking networks, gaining foundational experience in financial transaction processing, payment infrastructure and enterprise banking integrations.',
+    impact:'ATM software solutions serving <strong>30+ banks</strong>, infrastructure processing <strong>1.92M+ daily transactions</strong>, across banking networks comprising <strong>17,000+ ATM channels</strong>.',
+    resp:['Developed, customized and deployed ATM software solutions for banking institutions.','Worked on NFC, biometric authentication and cardless transaction capabilities.','Participated in solution architecture, customization, system integration and deployment activities.','Coordinated software patching, production releases and operational support.','Prepared technical documentation and delivered training to operational teams.'],
+    ach:['Built foundational expertise in banking technology, payment infrastructure and high-volume transaction processing.','Established the technical foundation for subsequent progression into enterprise software engineering and digital banking.'],
+    tech:['ATM Software','NFC','Biometric Authentication','Cardless Transactions','Payment Systems','Banking Integrations']
+  }
+];
+
+const ARCH = [
+  {id:'microservices', t:'Enterprise microservices', sum:'Independently deployable services behind a gateway, each owning its data, with messaging and caching to absorb load.',
+   lanes:[{l:'Channels',n:['Mobile app','Web app','Partner systems'],p:1},{l:'Edge',n:['!API gateway','Authentication','Rate limiting']},{l:'Services',n:['Accounts','Payments','Notifications','Reporting'],p:1},{l:'Data',n:['PostgreSQL / Oracle','Redis cache','Kafka topics'],p:1},{l:'Platform',n:['Docker','Kubernetes','CI/CD','ELK observability'],p:1}],
+   tr:[['Autonomy vs consistency','Separate data stores let teams ship alone, but cross-service updates need sagas or compensating actions.'],['Granularity vs overhead','Smaller services scale precisely and cost more to operate. Start coarse and split on evidence.'],['Cache speed vs freshness','Caching protects latency at peak. Each cached value needs an explicit expiry rule.']]},
+  {id:'ai-fin', t:'AI-enabled financial services', sum:'Machine learning and LLM scoring placed beside the transaction flow, with policy checks and human review before action.',
+   lanes:[{l:'Ingest',n:['Transactions','Customer context','Reference data'],p:1},{l:'Scoring',n:['Feature pipeline','!ML model','LLM-assisted analysis','Risk score']},{l:'Decision',n:['Policy and thresholds','Analyst review','Case management']},{l:'Assurance',n:['Audit log','Model monitoring','Feedback loop'],p:1}],
+   tr:[['Latency vs model depth','Real-time paths need light models. Heavier analysis can run asynchronously on flagged items.'],['Accuracy vs explainability','Analysts act faster on flags they can understand, even when a black box scores slightly higher.'],['Automation vs oversight','Decisions with customer impact keep a human approval step.']]},
+  {id:'agentic', t:'Agentic AI architecture', sum:'An orchestrator plans tasks and calls tools under policy, with approval gates and a full trace of every step.',
+   lanes:[{l:'Request',n:['User or system trigger','!Orchestrator','Planner']},{l:'Tools',n:['Retrieval','Internal APIs','Calculators'],p:1},{l:'Control',n:['Policy guardrails','Permission checks','Human approval']},{l:'Evidence',n:['Execution trace','Evaluation suite','Audit store'],p:1}],
+   tr:[['Autonomy vs control','Give agents narrow, reversible actions first. Widen scope as evaluation results justify it.'],['Capability vs permission','Each tool gets least-privilege access, so a wrong step stays small.'],['Flexibility vs testability','Open-ended plans are hard to test. Fixed workflows with agentic steps are easier to certify.']]},
+  {id:'rag', t:'RAG-based enterprise knowledge', sum:'Documents are chunked, embedded and indexed. At query time the retriever fetches permitted passages and the model answers from them with citations.',
+   lanes:[{l:'Ingest',n:['Policies and documents','Chunking','Embedding','!Vector index']},{l:'Query',n:['User question','Permission filter','Retriever','Re-ranker']},{l:'Answer',n:['Grounded prompt','LLM','Answer with citations']},{l:'Quality',n:['Freshness checks','Evaluation set','Feedback'],p:1}],
+   tr:[['Chunk size vs context','Small chunks retrieve precisely and lose context. Large chunks do the opposite.'],['Freshness vs cost','Frequent re-indexing keeps answers current and costs more compute.'],['Recall vs access control','Retrieval must respect each user’s permissions before ranking, not after.']]},
+  {id:'api-sec', t:'Secure API ecosystems', sum:'Every request is authenticated, authorized, rate limited and logged at the edge before reaching a service.',
+   lanes:[{l:'Client',n:['Client app','TLS 1.2+']},{l:'Edge',n:['WAF','!API gateway','OAuth 2.0 / JWT validation','Rate limits']},{l:'Services',n:['Business APIs','Authorization rules','Data stores'],p:1},{l:'Operations',n:['Central logging','Alerting','OWASP testing'],p:1}],
+   tr:[['Token lifetime vs usability','Short-lived tokens limit damage and need smooth refresh flows.'],['Central vs local authorization','A gateway enforces the common rules. Services still enforce data-level rules.'],['Strict validation vs delivery speed','Schema validation at the edge catches bad input early and needs disciplined contracts.']]},
+  {id:'eda', t:'Event-driven banking platforms', sum:'Business events flow through Kafka topics so that notifications, fraud scoring and reporting react without coupling to the core.',
+   lanes:[{l:'Producers',n:['Core banking','Payments channel','Digital channels'],p:1},{l:'Backbone',n:['!Kafka topics','Schema registry','Dead-letter queue'],p:1},{l:'Consumers',n:['Notifications','Fraud scoring','Reporting','Reconciliation'],p:1},{l:'Read models',n:['Customer views','Operational dashboards'],p:1}],
+   tr:[['Decoupling vs eventual consistency','Consumers see changes slightly later. Screens must tolerate that.'],['Throughput vs ordering','Partitioning scales volume and preserves order only per key.'],['At-least-once vs duplicates','Consumers must be idempotent, which matters most for payments.']]},
+  {id:'cloud', t:'Cloud-native enterprise applications', sum:'Containerized services built and released through automated pipelines onto Kubernetes, with managed data and observability on AWS.',
+   lanes:[{l:'Build',n:['Git','Jenkins CI/CD','Automated tests','Container registry']},{l:'Run',n:['!Kubernetes','Autoscaling','Health checks','Config and secrets']},{l:'Data',n:['Managed databases','Redis','Kafka'],p:1},{l:'Observe',n:['ELK logs','Metrics and alerts','Runbooks'],p:1}],
+   tr:[['Managed vs self-hosted','Managed services cut operations work and reduce control over tuning and cost.'],['Resilience vs cost','Multi-zone deployment survives failures and doubles some spend.'],['Release speed vs safety','Progressive rollouts and automated checks keep fast releases reversible.']]}
+];
+
+const CASES = [
+  {id:'dbank', t:'AI-Enabled Digital Banking', tag:'Digital banking', arch:0,
+   blurb:'Backend and API architecture for a customer-facing digital bank, built to stay fast, available and secure as capabilities grow.',
+   ch:'Serve millions of customers on a digital channel that has to stay fast, available and secure while new capabilities, including AI-enabled ones, keep arriving.',
+   so:'A backend and API layer of independently deployable services, integrated with internal banking platforms and third-party systems, with AI/ML capabilities added behind clear interfaces.',
+   ad:'Channel apps call an API gateway. Domain services own their data. Caching and messaging absorb peak load. Security and observability apply at every layer.',
+   st:['Java','Spring Boot','REST APIs','Microservices','Kafka','Redis','Docker','Kubernetes','CI/CD'],
+   im:['Start from requirements and non-functional targets: performance, scalability, availability, resilience and security.','Design services and APIs with Product Owners, security and infrastructure teams.','Deliver in Agile iterations with code and architecture reviews.','Automate build and release, and own production support.'],
+   ou:['Supports 2M+ customers and about 3M daily transactions.','CI/CD practices reduced deployment time.','No critical vulnerabilities left open in reported security audits.'],
+   le:['Treat non-functional requirements as scope from the first day.','Keep AI capabilities behind service boundaries so they can change without touching core flows.']},
+  {id:'tm', t:'Intelligent Transaction Monitoring', tag:'Fraud and risk', arch:1,
+   blurb:'Machine learning and LLM-assisted monitoring that flags unusual transactions for analyst review.',
+   ch:'Detect risky and unusual transactions quickly without flooding analysts with false alarms.',
+   so:'Combine rules with machine learning and LLM-assisted analysis to score transactions, flag anomalies and route them for review.',
+   ad:'Transactions feed a feature pipeline. Models score each event. A decision layer applies thresholds and policy. Flagged cases reach analysts with an audit trail.',
+   st:['Python','FastAPI','Machine Learning','NLP','LLMs','Java'],
+   im:['Define risk scenarios with business and risk stakeholders.','Keep scoring separate from the core transaction path to protect latency.','Keep a human in the loop for decisions that affect customers.','Monitor model behaviour and review outcomes regularly.'],
+   ou:['Contribution to AI/ML and LLM-enabled monitoring and fraud detection initiatives at Bank AL Habib.','Result figures are not published for confidentiality.'],
+   le:['Latency budgets shape model choice as much as accuracy does.','Explainable flags earn analyst trust faster than a higher score alone.']},
+  {id:'suptech', t:'Supervisory Technology (SupTech)', tag:'Regulatory supervision', arch:1,
+   blurb:'Platforms that bring regulatory data, rules and AI detection into one supervision workflow.',
+   ch:'Supervise a large and fast-changing digital financial sector where manual review cannot keep pace with the number of entities and channels.',
+   so:'Supervisory platforms that combine regulatory data, business rules, analytics and AI/ML detection of anomalies and violations.',
+   ad:'Data from regulated entities lands in a central store. Rules and models, including NLP, flag anomalies and possible violations. Supervisors review findings in one place.',
+   st:['Java','Python','Machine Learning','NLP','CI/CD'],
+   im:['Translate supervisory requirements into practical technology with business, regulatory, security and infrastructure teams.','Lead a team of 4 developers.','Implement CI/CD for consistent deployments.','Train multiple divisions so the platforms get used.'],
+   ou:['Supervision of 50+ regulated entities: banks, microfinance banks and fintechs.','Coverage of 130,000+ digital channels.','Training and knowledge transfer across multiple divisions.'],
+   le:['Adoption depends on training as much as on features.','Rules handle known violations and models help find the unknown. The two work best together.']},
+  {id:'integ', t:'Enterprise Banking Integrations', tag:'Core banking and channels', arch:4,
+   blurb:'REST APIs and integration patterns that link core banking, channels and enterprise software.',
+   ch:'Connect core banking, delivery channels and enterprise systems reliably for many banks and millions of users.',
+   so:'REST APIs and enterprise integration patterns between core banking services, payment channels and enterprise software.',
+   ad:'A gateway fronts integration services. Adapters connect core banking and third parties. Asynchronous messaging handles long-running work.',
+   st:['Java','Spring Boot','REST APIs','Microservices','Oracle','PL/SQL'],
+   im:['Customize and extend core banking with business stakeholders.','Coordinate with QA on testing, UAT and production readiness.','Work with infrastructure teams on deployment and go-live.'],
+   ou:['Report generation cut from 5 days to 90 minutes (National Bank of Pakistan).','Digital banking and automation for 38M consumers (Techlogix).','ATM software for 30+ banks, 1.92M daily transactions, 17,000+ ATM channels (TouchPoint).'],
+   le:['Performance wins often sit in the data layer.','Production support shows exactly where integrations break.']},
+  {id:'pay', t:'Digital Payments and Financial Inclusion', tag:'Payments', arch:5,
+   blurb:'Instant payment integrations and accessible channels that widen access to digital financial services.',
+   ch:'Make instant, low-friction payments available to more people across more channels.',
+   so:'Integrations with the Raast instant payment system, supporting QR payments, IBAN transfers and alias-based transfers.',
+   ad:'A payment channel calls an API layer. An integration adapter talks to Raast. Postings reach the core and events update customers and records.',
+   st:['Java','Spring Boot','REST APIs','Event-Driven Architecture'],
+   im:['Map scheme message flows to internal services.','Design idempotent, traceable payment flows with clear failure states.','Test end to end with QA and partners before go-live.'],
+   ou:['Raast integrations covering QR, IBAN and alias-based payments.','Earlier work enabled NFC, biometric and cardless ATM transactions across 17,000+ channels (TouchPoint).'],
+   le:['Idempotency and clear failure states matter most in payments.','Accessible channels widen access as much as new features do.']}
+];
+
+const INSIGHTS = [
+  {c:'Agentic AI', t:'Agentic AI in Banking', d:'Where autonomous agents can help banking operations, and where human approval has to stay.', date:'', url:''},
+  {c:'Governance', t:'AI Governance and Accountability', d:'Ownership, audit trails and escalation paths for AI-assisted decisions.', date:'', url:''},
+  {c:'Digital banking', t:'Future of Digital Banking', d:'How platform, payments and AI trends reshape the customer channel.', date:'', url:''},
+  {c:'Fraud and risk', t:'AI-Driven Fraud Detection', d:'Combining rules, machine learning and analyst feedback in transaction monitoring.', date:'', url:''},
+  {c:'Emerging tech', t:'Biocomputing and Emerging Technologies', d:'A technologist’s reading of early signals beyond conventional computing.', date:'', url:''},
+  {c:'SupTech and RegTech', t:'SupTech and RegTech Innovation', d:'What supervisors and institutions each gain from automated, data-driven oversight.', date:'', url:''},
+  {c:'Cloud', t:'Cloud Computing and Enterprise Resilience', d:'Designing for failure in high-volume enterprise systems.', date:'', url:''},
+  {c:'Security and AI', t:'Secure AI Adoption in Financial Services', d:'Practical controls for introducing LLMs into regulated environments.', date:'', url:''}
+];
+
+const EDU = {
+  degree:{t:'Bachelor of Computer Science', o:'Sir Syed University of Engineering & Technology, Karachi', d:'Completed March 2017', intern:[['Microsoft Innovation Center','Internship, Feb 2016 – May 2016'],['National Bank of Pakistan','Internship, Jun 2015 – Jul 2015']]},
+  certs:[['Google Project Management Specialization','Coursera and Google'],['AWS Generative AI Applications','Coursera and Amazon Web Services'],['Building Modern Java and Python Applications on AWS','Coursera and Amazon Web Services'],['AWS Cloud Technology Consultant','Coursera and Amazon Web Services'],['AWS Cloud Solutions Architect Professional','Coursera and Amazon Web Services'],['Getting Started with Amazon Machine Learning','Coursera and Amazon Web Services']],
+  awards:[['Selected for 3-week intensive training at Oracle Headquarters, Singapore','June 2025, Bank AL Habib'],['Selected to evaluate emerging technologies such as Cloud and AI/ML','November 2022, State Bank of Pakistan'],['Promoted to Senior Software Engineer','July 2019, Techlogix'],['Achiever of the Month','January 2019, Techlogix']]
+};
+
+/* ---------------- rendering ---------------- */
+const $ = (s, r=document) => r.querySelector(s);
+const $$ = (s, r=document) => [...r.querySelectorAll(s)];
+const chips = (arr, cls='') => `<ul class="chips">${arr.map(x=>`<li class="chip ${cls}">${x}</li>`).join('')}</ul>`;
+const dots = arr => `<ul class="dots">${arr.map(x=>`<li>${x}</li>`).join('')}</ul>`;
+
+function renderLinks(){
+  const links = [];
+  if (CONFIG.linkedin) links.push(`<a class="btn" href="${CONFIG.linkedin}" target="_blank" rel="noopener">Let's Connect - LinkedIn &#8599;</a>`);
+  if (CONFIG.github) links.push(`<a class="btn" href="${CONFIG.github}" target="_blank" rel="noopener">GitHub &#8599;</a>`);
+  $('#heroActions').insertAdjacentHTML('afterbegin', links.join(''));
+}
+
+function renderExpertise(){
+  $('#expGrid').innerHTML = EXPERTISE.map(e => `<article class="card lift exp"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true">${ICONS[e.i]}</svg></div><h3>${e.t}</h3><p>${e.d}</p>${e.x?'<span class="chip hi tag">Exploring</span>':''}</article>`).join('');
+  $('#skills').innerHTML = SKILLS.map(g => `<div class="card ${g.x?'explore':''}"><h3>${g.t}</h3>${chips(g.l, g.x?'hi':'')}${g.n?`<p>${g.n}</p>`:''}</div>`).join('');
+}
+
+function renderExperience(){
+  $('#timeline').innerHTML = EXPERIENCE.map((e,i) => `
+  <li class="job ${e.now?'now-job':''}"><div class="card">
+    <div class="job-top"><div><p class="job-period">${e.period}</p><h3>${e.title}</h3><p class="job-org">${e.org} &middot; ${e.loc}</p></div>
+    <button class="toggle" type="button" aria-expanded="false" aria-controls="job-${i}">Show details</button></div>
+    <p class="job-arc">${e.arc}</p>
+    <p class="job-impact"><b>Impact</b>${e.impact}</p>
+    <div class="job-body" id="job-${i}" hidden>
+      <div class="cols"><div><h4>Responsibilities</h4>${dots(e.resp)}</div><div><h4>Achievements</h4>${dots(e.ach)}</div></div>
+      <div><h4>Technologies and platforms</h4>${chips(e.tech)}</div>
+    </div></div></li>`).join('');
+  $('#timeline').addEventListener('click', ev => {
+    const b = ev.target.closest('.toggle'); if (!b) return;
+    const open = b.getAttribute('aria-expanded') === 'true';
+    b.setAttribute('aria-expanded', String(!open));
+    b.textContent = open ? 'Show details' : 'Hide details';
+    document.getElementById(b.getAttribute('aria-controls')).hidden = open;
+  });
+}
+
+function tabKeys(list, ev, select){
+  const keys = ['ArrowDown','ArrowRight','ArrowUp','ArrowLeft','Home','End'];
+  if (!keys.includes(ev.key)) return;
+  const tabs = $$('[role="tab"]', list);
+  let i = tabs.indexOf(document.activeElement); if (i < 0) return;
+  if (ev.key==='ArrowDown'||ev.key==='ArrowRight') i = (i+1)%tabs.length;
+  else if (ev.key==='ArrowUp'||ev.key==='ArrowLeft') i = (i-1+tabs.length)%tabs.length;
+  else if (ev.key==='Home') i = 0; else i = tabs.length-1;
+  ev.preventDefault(); tabs[i].focus(); select(i);
+}
+
+let caseIdx = 0;
+function renderCases(){
+  const list = $('#caseTabs');
+  list.innerHTML = CASES.map((c,i) => `<button class="tab" role="tab" id="ct-${i}" aria-selected="${i===0}" aria-controls="casePanel" tabindex="${i===0?0:-1}" data-i="${i}">${c.t}<small>${c.tag}</small></button>`).join('');
+  list.addEventListener('click', ev => { const b = ev.target.closest('.tab'); if (b) selectCase(+b.dataset.i); });
+  list.addEventListener('keydown', ev => tabKeys(list, ev, selectCase));
+  selectCase(0);
+  $('#casePanel').addEventListener('click', ev => {
+    const b = ev.target.closest('[data-arch]'); if (!b) return;
+    selectArch(+b.dataset.arch);
+    $('#architecture').scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'});
+  });
+}
+function selectCase(i){
+  caseIdx = i;
+  $$('#caseTabs .tab').forEach((b,j) => { b.setAttribute('aria-selected', String(j===i)); b.tabIndex = j===i?0:-1; });
+  const c = CASES[i], p = $('#casePanel');
+  p.setAttribute('aria-labelledby', 'ct-'+i);
+  p.innerHTML = `
+    <div class="case"><div class="case-top"><div><h3>${c.t}</h3><p class="blurb">${c.blurb}</p></div><span class="chip">Conceptual and sanitised</span></div>
+    <div class="case-grid">
+      <div class="block"><h4>Business challenge</h4><p>${c.ch}</p></div>
+      <div class="block"><h4>Proposed solution</h4><p>${c.so}</p></div>
+      <div class="block"><h4>Architecture and design</h4><p>${c.ad}</p>${$('#architecture') && !$('#architecture').hidden ? `<button class="btn" type="button" data-arch="${c.arch}">View conceptual diagram</button>` : ''}</div>
+      <div class="block"><h4>Technology stack</h4>${chips(c.st)}</div>
+      <div class="block"><h4>Implementation approach</h4>${dots(c.im)}</div>
+      <div class="block win"><h4>Business outcomes</h4>${dots(c.ou)}</div>
+      <div class="block span"><h4>Key learnings</h4>${dots(c.le)}</div>
+    </div></div>`;
+}
+
+function renderArch(){
+  const list = $('#archTabs');
+  list.innerHTML = ARCH.map((a,i) => `<button class="pill" role="tab" id="at-${i}" aria-selected="${i===0}" aria-controls="archPanel" tabindex="${i===0?0:-1}" data-i="${i}">${a.t}</button>`).join('');
+  list.addEventListener('click', ev => { const b = ev.target.closest('.pill'); if (b) selectArch(+b.dataset.i); });
+  list.addEventListener('keydown', ev => tabKeys(list, ev, selectArch));
+  selectArch(0);
+}
+function selectArch(i){
+  $$('#archTabs .pill').forEach((b,j) => { b.setAttribute('aria-selected', String(j===i)); b.tabIndex = j===i?0:-1; });
+  const a = ARCH[i], p = $('#archPanel');
+  p.setAttribute('aria-labelledby', 'at-'+i);
+  const node = n => n[0]==='!' ? `<span class="node hi">${n.slice(1)}</span>` : `<span class="node">${n}</span>`;
+  const lane = l => `<div class="lane"><span class="lane-label">${l.l}</span><div class="flow">${l.n.map(node).join(l.p?'':'<span class="arrow" aria-hidden="true">&rarr;</span>')}</div></div>`;
+  p.innerHTML = `
+    <div class="arch-top"><div><h3>${a.t}</h3><p class="sum">${a.sum}</p></div><span class="chip">Conceptual example</span></div>
+    <div class="diagram" role="group" aria-label="${a.t} conceptual diagram, layers from top to bottom">${a.lanes.map(lane).join('')}</div>
+    <p class="trade-h">Trade-offs I weigh</p>
+    <ul class="trade">${a.tr.map(x=>`<li><b>${x[0]}</b>${x[1]}</li>`).join('')}</ul>`;
+}
+
+function renderInsights(){
+  $('#insGrid').innerHTML = INSIGHTS.map(a => `<article class="card lift ins"><p class="cat">${a.c}</p><h3>${a.t}</h3><p>${a.d}</p>
+    <div class="meta"><span>${a.date || 'Date to be added'}</span>${a.url?`<a href="${a.url}" target="_blank" rel="noopener">Read on LinkedIn &#8599;</a>`:'<span>Link to be added</span>'}</div></article>`).join('');
+}
+
+function renderEdu(){
+  const d = EDU.degree;
+  $('#eduGrid').innerHTML = `
+    <div class="card edu"><h3>Education</h3><p class="big">${d.t}</p><p class="sub">${d.o}</p><p class="sub">${d.d}</p>
+      <div class="rule"><ul>${d.intern.map(x=>`<li>${x[0]}<span>${x[1]}</span></li>`).join('')}</ul></div></div>
+    <div class="card edu"><h3>Certifications</h3><ul>${EDU.certs.map(x=>`<li>${x[0]}<span>${x[1]}</span></li>`).join('')}</ul></div>
+    <div class="card edu"><h3>Recognition</h3><ul>${EDU.awards.map(x=>`<li>${x[0]}<span>${x[1]}</span></li>`).join('')}</ul></div>`;
+}
+
+/* ---------------- navigation ---------------- */
+function initNav(){
+  const nav = $('#nav'), tog = $('#navToggle');
+  tog.addEventListener('click', () => { const o = nav.classList.toggle('open'); tog.setAttribute('aria-expanded', String(o)); });
+  $$('a', nav).forEach(a => a.addEventListener('click', () => { nav.classList.remove('open'); tog.setAttribute('aria-expanded','false'); }));
+  document.addEventListener('keydown', e => { if (e.key==='Escape' && nav.classList.contains('open')) { nav.classList.remove('open'); tog.setAttribute('aria-expanded','false'); tog.focus(); } });
+  const links = new Map($$('a', nav).map(a => [a.getAttribute('href').slice(1), a]));
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) links.forEach((a,id) => id===e.target.id ? a.setAttribute('aria-current','true') : a.removeAttribute('aria-current'));
+  }), {rootMargin:'-40% 0px -55% 0px'});
+  links.forEach((a,id) => { const s = document.getElementById(id); if (s) io.observe(s); });
+  const top = $('#toTop');
+  const onScroll = () => { top.hidden = scrollY < 700; };
+  addEventListener('scroll', onScroll, {passive:true}); onScroll();
+  top.addEventListener('click', () => scrollTo({top:0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'}));
+}
+
+/* ---------------- hero network ---------------- */
+function initNet(){
+  const c = $('#net'), ctx = c.getContext('2d');
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let w=0, h=0, pts=[], raf=0, visible=true;
+  function size(){
+    cancelAnimationFrame(raf);
+    const r = c.getBoundingClientRect(), dpr = Math.min(devicePixelRatio||1, 2);
+    w = r.width; h = r.height; c.width = w*dpr; c.height = h*dpr; ctx.setTransform(dpr,0,0,dpr,0,0);
+    const n = Math.round(Math.min(64, Math.max(22, w*h/17000)));
+    pts = Array.from({length:n}, () => ({x:Math.random()*w, y:Math.random()*h, vx:(Math.random()-.5)*.22, vy:(Math.random()-.5)*.22}));
+    draw();
+  }
+  function draw(){
+    ctx.clearRect(0,0,w,h);
+    for (const p of pts){ if (!reduce){ p.x+=p.vx; p.y+=p.vy; if(p.x<0||p.x>w)p.vx*=-1; if(p.y<0||p.y>h)p.vy*=-1; } }
+    for (let i=0;i<pts.length;i++) for (let j=i+1;j<pts.length;j++){
+      const d = Math.hypot(pts[i].x-pts[j].x, pts[i].y-pts[j].y);
+      if (d<135){ ctx.strokeStyle = `rgba(56,189,248,${(1-d/135)*.32})`; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(pts[i].x,pts[i].y); ctx.lineTo(pts[j].x,pts[j].y); ctx.stroke(); }
+    }
+    ctx.fillStyle = 'rgba(56,189,248,.75)';
+    for (const p of pts){ ctx.beginPath(); ctx.arc(p.x,p.y,1.7,0,6.2832); ctx.fill(); }
+    if (!reduce && visible) raf = requestAnimationFrame(draw);
+  }
+  new IntersectionObserver(es => { visible = es[0].isIntersecting; cancelAnimationFrame(raf); if (visible && !reduce) draw(); }).observe(c);
+  let t; addEventListener('resize', () => { clearTimeout(t); t = setTimeout(size, 150); });
+  size();
+}
+
+/* ---------------- boot ---------------- */
+renderLinks(); renderExpertise(); renderExperience(); renderCases(); renderArch(); renderInsights(); renderEdu();
+initNav(); initNet();
+$('#year').textContent = new Date().getFullYear();
+</script>
