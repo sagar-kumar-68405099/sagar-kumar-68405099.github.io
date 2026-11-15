@@ -688,7 +688,7 @@ function selectArch(i){
 
 function renderInsights(){
   $('#insGrid').innerHTML = INSIGHTS.map(a => `<article class="card lift ins"><p class="cat">${a.c}</p><h3>${a.t}</h3><p>${a.d}</p>
-    <div class="meta"><span>${a.date || 'Date to be added'}</span>${a.url?`<a href="${a.url}" target="_blank" rel="noopener">Read on LinkedIn &#8599;</a>`:'<span>Link to be added</span>'}</div></article>`).join('');
+    <div class="meta"><span>${a.date || ''}</span>${a.url?`<a href="${a.url}" target="_blank" rel="noopener">Read on LinkedIn &#8599;</a>`:'<span></span>'}</div></article>`).join('');
 }
 
 function renderEdu(){
