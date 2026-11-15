@@ -12,7 +12,7 @@ img{max-width:100%}
 </style>
 <title>Sagar Kumar</title>
 <meta name="description" content="Sagar Kumar: senior software engineer and solution architect with 9+ years in digital banking, FinTech, SupTech and applied AI. Based in Karachi, open to international roles.">
-<meta property="og:title" content="Sagar Kumar | Senior Software Engineer and Solution Architect">
+<meta property="og:title" content="Sagar Kumar | Lead AI and Software Engineer | Solution Architect | Application, API and Data Security | FinTech | SupTech | Digital Banking">
 <meta property="og:description" content="Enterprise software, digital banking architecture, SupTech and applied AI.">
 <meta property="og:type" content="website">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Sagar Kumar","jobTitle":"Senior Software Engineer and Solution Architect","address":{"@type":"PostalAddress","addressLocality":"Karachi","addressCountry":"PK"},"sameAs":["https://www.linkedin.com/in/sagar-kumar-68405099/"]}</script>
@@ -233,6 +233,14 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 
 .to-top{position:fixed;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:40;width:46px;height:46px;border-radius:50%;border:1px solid rgba(56,189,248,.5);background:var(--header-bg);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:var(--accent);cursor:pointer;display:grid;place-items:center}
 .to-top svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .to-top:hover{background:var(--accent-soft)}
+/* security section (reuses the architecture tab, diagram and trade-off styles) */
+.arch h4{font:500 12px var(--font-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.arch .chips{justify-content:flex-end}
+.sec-cols{margin-top:24px;align-items:start}
+.sec-win{padding:16px 18px;border-radius:12px;border:1px solid rgba(56,189,248,.4);background:var(--accent-soft)}
+.sec-win h4{color:var(--accent)}
+.sec-win p{font-size:15px;color:var(--text)}
+.sec-note{margin-top:6px}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
 </style>
 </head>
@@ -252,6 +260,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 
         <li><a href="#experience">Experience</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#security">Security</a></li>
         <li><a href="#insights">Research &amp; Insights</a></li>
       </ul>
     </nav>
@@ -265,7 +274,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 
   <div class="wrap hero-grid">
     <div>
       <h1 id="h-hero">Sagar <em>Kumar</em></h1>
-      <h2 id="h-hero">Research, Design & Build Scalable AI-Powered Solutions</h2>
+      <h2 id="h-hero">Research, Innovate & Build Secure, Scalable, & AI-Powered Solutions</h2>
 
       <!-- <p class="lead">Technology professional with 9+ years of experience building enterprise software, architecting digital banking solutions, and exploring the transformative potential of Artificial Intelligence, Agentic AI, and emerging technologies.</p> -->
 
@@ -275,6 +284,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 
   <li class="chip hi">Generative AI &amp; Agentic AI</li>
   <li class="chip hi">Research &amp; Innovation</li>
   <li class="chip hi">Enterprise Architecture</li>
+  <li class="chip hi">Application &amp; AI Security</li>
   <li class="chip hi">Cloud &amp; Distributed-Systems</li>
   <li class="chip hi">FinTech &amp; Digital Banking</li>
   <li class="chip hi">Software Engineering</li>
@@ -283,7 +293,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 
 
 
       <div class="actions" id="heroActions">
-        <a class="btn" href="#projects">Explore My Work</a>
+        <!-- <a class="btn" href="#projects">Explore My Work</a> -->
       </div>
     </div>
 
@@ -318,6 +328,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 
           <tr><th scope="row">9+ Years of Experience</th><td>Software engineering, enterprise systems, digital financial services, and technology innovation.</td></tr>
           <tr><th scope="row">Financial Technology Expertise</th><td>Hands-on experience across digital banking, core banking, ATM networks, payment systems, and financial infrastructure, from both institutional and regulatory perspectives.</td></tr>
           <tr><th scope="row">Architecture &amp; Engineering</th><td>Designing and delivering enterprise-grade solutions, translating complex requirements into scalable architectures through HLD/LLD, technical reviews, and non-functional engineering.</td></tr>
+          <tr><th scope="row">Security by Design</th><td>Application and API security, secure CI/CD delivery, and securing AI systems in regulated banking environments, guided by OWASP principles and standards such as OAuth 2.0, JWT and TLS.</td></tr>
           <tr><th scope="row">AI &amp; Applied Research</th><td>Exploring and applying Machine Learning, Deep Learning, NLP, Generative AI, LLMs, RAG, and Agentic AI across fraud detection, predictive analytics, intelligent automation, regulatory intelligence, and decision-support systems.</td></tr>
           <tr><th scope="row">Emerging AI Research Interests</th><td>Explainable and Responsible AI, Trustworthy AI, Human-Centred AI, Multi-Agent Systems, AI Security, Privacy-Preserving Machine Learning, and Human-AI Collaboration.</td></tr>
           <tr><th scope="row">Technical Leadership &amp; Collaboration</th><td>Leading and mentoring engineering teams, coordinating cross-functional stakeholders, and driving technology delivery.</td></tr>
@@ -374,6 +385,18 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 
       <div class="case-tabs" id="caseTabs" role="tablist" aria-label="Case studies" aria-orientation="vertical"></div>
       <article class="card case" id="casePanel" role="tabpanel" tabindex="0"></article>
     </div>
+  </div>
+</section>
+
+<section class="section band" id="security" aria-labelledby="h-sec">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Cybersecurity</p>
+      <h2 id="h-sec">Security built in, not bolted on</h2>
+      <p class="lead">In banking, a feature is only finished when it is secure. Three areas where I apply that: the applications and APIs, the pipeline that delivers them, and the AI systems that increasingly sit inside them. Diagrams are conceptual and do not depict any employer's system.</p>
+    </div>
+    <div class="arch-tabs" id="secTabs" role="tablist" aria-label="Security focus areas"></div>
+    <article class="card arch" id="secPanel" role="tabpanel" tabindex="0"></article>
   </div>
 </section>
 
@@ -437,7 +460,10 @@ const ICONS = {
   shield:'<path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/>',
   radar:'<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><path d="M12 12l6-6"/>',
   cloud:'<path d="M7 18a4 4 0 010-8 5.5 5.5 0 0110.5 1.5A3.3 3.3 0 0117 18z"/>',
-  flag:'<path d="M5 21V4M5 4h12l-2 4 2 4H5"/>'
+  flag:'<path d="M5 21V4M5 4h12l-2 4 2 4H5"/>',
+  lock:'<rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 018 0v3M12 15v2"/>',
+  loop:'<path d="M12 12c-2-3-3.5-4-5.5-4a4 4 0 100 8c2 0 3.5-1 5.5-4zm0 0c2 3 3.5 4 5.5 4a4 4 0 100-8c-2 0-3.5 1-5.5 4z"/>',
+  aishield:'<path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M12 8l1 2.5 2.5 1-2.5 1L12 15l-1-2.5-2.5-1 2.5-1z"/>'
 };
 
 const EXPERTISE = [
@@ -448,6 +474,9 @@ const EXPERTISE = [
   {i:'arch', t:'Enterprise Software Architecture', d:'HLD and LLD, architecture reviews and ownership of performance, scalability, availability and security requirements.'},
   {i:'micro', t:'Java & Spring Boot Microservices', d:'Spring Boot, Spring Cloud and Hibernate/JPA services, from design through production support.'},
   {i:'api', t:'API-First Architecture', d:'REST APIs that connect internal banking platforms and third parties, secured with OAuth 2.0, JWT and TLS.'},
+  {i:'lock', t:'Application & API Security', d:'Secure coding and OWASP principles, with OAuth 2.0, JWT and TLS protecting banking APIs. No critical vulnerabilities left open in reported security audits.'},
+  {i:'loop', t:'Secure DevOps', d:'Repeatable CI/CD delivery on Jenkins, Git, Docker and Kubernetes, with security controls and logging designed into the pipeline.'},
+  {i:'aishield', t:'Securing AI Systems', d:'Guardrails against prompt injection, data leakage and excessive agency in LLM and ML applications, with least-privilege tools and human approval.', x:true},
   {i:'bank', t:'FinTech & Digital Banking', d:'Customer-facing digital banking for 2M+ customers, plus payments, ATM channels and core banking.'},
   {i:'shield', t:'Regulatory Technology (RegTech)', d:'Turning regulatory rules and reporting into software, informed by the supervisor’s side of the table.'},
   {i:'radar', t:'Supervisory Technology (SupTech)', d:'Platforms for technology-enabled supervision of 50+ regulated entities and 130,000+ digital channels.'},
@@ -464,7 +493,7 @@ const SKILLS = [
   {t:'Cloud and DevOps', l:['AWS','Docker','Kubernetes','Jenkins','Git','CI/CD']},
   {t:'Data and messaging', l:['PostgreSQL','Oracle','SQL Server','NoSQL','Apache Kafka','Redis']},
   {t:'Delivery and observability', l:['Agile / Scrum','SDLC','Code Reviews','Architecture Reviews','ELK Stack','Production Support','Team Mentoring']},
-  {t:'Currently exploring', x:true, l:['Agentic AI','RAG','Terraform','DynamoDB','Domain-Driven Design'], n:'Active learning areas, not yet part of my production track record.'}
+  {t:'Currently exploring', x:true, l:['Agentic AI','RAG','Terraform','DynamoDB','Domain-Driven Design','LLM Application Security','DevSecOps Automation'], n:'Active learning areas, not yet part of my production track record.'}
 ];
 
 const EXPERIENCE = [
@@ -542,7 +571,7 @@ const CASES = [
    ad:'Channel apps call an API gateway. Domain services own their data. Caching and messaging absorb peak load. Security and observability apply at every layer.',
    st:['Java','Spring Boot','REST APIs','Microservices','Kafka','Redis','Docker','Kubernetes','CI/CD'],
    im:['Start from requirements and non-functional targets: performance, scalability, availability, resilience and security.','Design services and APIs with Product Owners, security and infrastructure teams.','Deliver in Agile iterations with code and architecture reviews.','Automate build and release, and own production support.'],
-   ou:['Supports 2M+ customers and about 3M daily transactions.','CI/CD practices reduced deployment time.','No critical vulnerabilities left open in reported security audits.'],
+   ou:['Supports 2M+ customers and about 3M daily transactions.','CI/CD practices reduced deployment time.','Successfully deployed solution on indepedent Microservices, reducing downtime near to zero.'],
    le:['Treat non-functional requirements as scope from the first day.','Keep AI capabilities behind service boundaries so they can change without touching core flows.']},
   {id:'tm', t:'Intelligent Transaction Monitoring', tag:'Fraud and risk', arch:1,
    blurb:'Machine learning and LLM-assisted monitoring that flags unusual transactions for analyst review.',
@@ -551,7 +580,7 @@ const CASES = [
    ad:'Transactions feed a feature pipeline. Models score each event. A decision layer applies thresholds and policy. Flagged cases reach analysts with an audit trail.',
    st:['Python','FastAPI','Machine Learning','NLP','LLMs','Java'],
    im:['Define risk scenarios with business and risk stakeholders.','Keep scoring separate from the core transaction path to protect latency.','Keep a human in the loop for decisions that affect customers.','Monitor model behaviour and review outcomes regularly.'],
-   ou:['Contribution to AI/ML and LLM-enabled monitoring and fraud detection initiatives at Bank AL Habib.','Result figures are not published for confidentiality.'],
+   ou:['Contribution to AI/ML and LLM-enabled monitoring and fraud detection initiatives.','Result figures are not published for confidentiality.'],
    le:['Latency budgets shape model choice as much as accuracy does.','Explainable flags earn analyst trust faster than a higher score alone.']},
   {id:'suptech', t:'Supervisory Technology (SupTech)', tag:'Regulatory supervision', arch:1,
    blurb:'Platforms that bring regulatory data, rules and AI detection into one supervision workflow.',
@@ -569,7 +598,7 @@ const CASES = [
    ad:'A gateway fronts integration services. Adapters connect core banking and third parties. Asynchronous messaging handles long-running work.',
    st:['Java','Spring Boot','REST APIs','Microservices','Oracle','PL/SQL'],
    im:['Customize and extend core banking with business stakeholders.','Coordinate with QA on testing, UAT and production readiness.','Work with infrastructure teams on deployment and go-live.'],
-   ou:['Report generation cut from 5 days to 90 minutes (National Bank of Pakistan).','Digital banking and automation for 38M consumers (Techlogix).','ATM software for 30+ banks, 1.92M daily transactions, 17,000+ ATM channels (TouchPoint).'],
+   ou:['Report generation cut from 5 days to 90 minutes.'],
    le:['Performance wins often sit in the data layer.','Production support shows exactly where integrations break.']},
   {id:'pay', t:'Digital Payments and Financial Inclusion', tag:'Payments', arch:5,
    blurb:'Instant payment integrations and accessible channels that widen access to digital financial services.',
@@ -578,8 +607,17 @@ const CASES = [
    ad:'A payment channel calls an API layer. An integration adapter talks to Raast. Postings reach the core and events update customers and records.',
    st:['Java','Spring Boot','REST APIs','Event-Driven Architecture'],
    im:['Map scheme message flows to internal services.','Design idempotent, traceable payment flows with clear failure states.','Test end to end with QA and partners before go-live.'],
-   ou:['Raast integrations covering QR, IBAN and alias-based payments.','Earlier work enabled NFC, biometric and cardless ATM transactions across 17,000+ channels (TouchPoint).'],
-   le:['Idempotency and clear failure states matter most in payments.','Accessible channels widen access as much as new features do.']}
+   ou:['Raast integrations covering QR, IBAN and alias-based payments.', 'Digital transactional and banking apps for 38M consumers.','Earlier work enabled NFC, biometric and cardless ATM transactions across 17,000+ channels.'],
+   le:['Idempotency and clear failure states matter most in payments.','Accessible channels widen access as much as new features do.']},
+  {id:'secure', t:'Secure Application and API Engineering', tag:'Cybersecurity', arch:4,
+   blurb:'Security practices built into design, coding, review and release of customer-facing banking applications.',
+   ch:'Keep customer-facing banking applications and APIs secure for millions of users while delivery stays fast and audit-ready.',
+   so:'Secure engineering built into design, coding, review and release, backed by standard API security (OAuth 2.0, JWT, TLS) and OWASP principles.',
+   ad:'Requests are authenticated and authorized at the API layer. Services validate input and enforce access rules. Logging and monitoring support audit and incident response.',
+   st:['Java','Spring Boot','OAuth 2.0','JWT','TLS','OWASP','CI/CD','ELK Stack'],
+   im:['Set security requirements next to functional ones at design time.','Apply secure coding practice and include security in code and architecture reviews.','Work with security and infrastructure teams on audit findings.','Automate build and release with CI/CD so fixes ship repeatably.'],
+   ou:['No critical vulnerabilities left open in reported security audits.','Controls apply to platforms serving 2M+ customers and about 3M daily transactions.'],
+   le:['Security designed early costs far less than security retrofitted late.','Repeatable pipelines get fixes into production faster and more safely.']}
 ];
 
 const INSIGHTS = [
@@ -590,7 +628,35 @@ const INSIGHTS = [
   {c:'Emerging tech', t:'Biocomputing and Emerging Technologies', d:'A technologist’s reading of early signals beyond conventional computing.', date:'', url:''},
   {c:'SupTech and RegTech', t:'SupTech and RegTech Innovation', d:'What supervisors and institutions each gain from automated, data-driven oversight.', date:'', url:''},
   {c:'Cloud', t:'Cloud Computing and Enterprise Resilience', d:'Designing for failure in high-volume enterprise systems.', date:'', url:''},
-  {c:'Security and AI', t:'Secure AI Adoption in Financial Services', d:'Practical controls for introducing LLMs into regulated environments.', date:'', url:''}
+  {c:'Security and AI', t:'Secure AI Adoption in Financial Services', d:'Practical controls for introducing LLMs into regulated environments.', date:'', url:''},
+  {c:'AI security', t:'Threat Modelling LLM Applications', d:'Prompt injection, data leakage and excessive agency, and the controls that contain them.', date:'', url:''},
+  {c:'Application security', t:'Secure by Design in Banking APIs', d:'Practical API and application security patterns for high-volume digital banking.', date:'', url:''},
+  {c:'Secure DevOps', t:'Building a Secure Delivery Pipeline', d:'Where security checks belong in CI/CD without slowing releases.', date:'', url:''}
+];
+
+const SECURITY = [
+  {t:'Application & API security', status:'Hands-on',
+   sum:'Security designed into services and APIs from the first requirement, so controls are part of how the system works and not a late review.',
+   does:['Apply secure software engineering practices across applications and APIs in enterprise digital banking.','Protect APIs with OAuth 2.0, JWT and TLS, guided by OWASP principles.','Include security in code and architecture reviews.','Work with security and infrastructure teams to close audit findings.'],
+   winh:'Outcome', win:'Real-time monitoring of enterprise digital banking system',
+   lanes:[{l:'Design',n:['Security requirements','Threat modelling','Data privacy review']},{l:'Edge',n:['TLS','!API gateway','OAuth 2.0 / JWT validation','Rate limiting']},{l:'Service',n:['Input validation','Authorization checks','Secrets handling','Audit logging'],p:1},{l:'Assurance',n:['Code review','Security testing','Audit remediation'],p:1}],
+   trh:'Design choices I weigh',
+   tr:[['Strict validation vs delivery speed','Schema validation at the edge catches bad input early and needs disciplined, versioned contracts.'],['Token lifetime vs usability','Short-lived tokens limit damage and need smooth refresh flows.'],['Central vs local authorization','A gateway enforces the common rules. Services still enforce data-level rules.']]},
+  {t:'Secure DevOps', status:'Hands-on foundation',
+   sum:'A delivery pipeline that makes the secure path the easy path: every change is reviewed, scanned, built the same way and traceable in production.',
+   does:['Built CI/CD pipelines for consistent, faster deployments at Bank AL Habib and the State Bank of Pakistan.','Work with Jenkins, Git, Docker and Kubernetes in delivery pipelines.','Use ELK for logging and observability so production issues can be traced.','Extending pipelines with automated security checks as a practice area.'],
+   winh:'Outcome', win:'CI/CD practices reduced deployment time and made releases consistent.',
+   lanes:[{l:'Source',n:['Git','Branch protection','Code review']},{l:'Build',n:['Jenkins pipeline','Dependency checks','Static analysis']},{l:'Package',n:['Docker image','Image scanning','!Versioned artifact']},{l:'Deploy',n:['Kubernetes','Secrets management','Least-privilege access']},{l:'Run',n:['ELK logging','Alerts','Audit trail'],p:1}],
+   trh:'Design choices I weigh',
+   tr:[['Gate strictness vs release speed','Block on high-severity findings and track the rest, so pipelines stay fast and trusted.'],['Scan depth vs pipeline time','Run quick checks on every commit and deeper scans on a schedule or before release.'],['Central policy vs team autonomy','Shared pipeline templates enforce the baseline and still let teams add their own checks.']]},
+  {t:'Securing AI systems', status:'Applied and researching',
+   sum:'LLM and ML systems add new attack surface: untrusted prompts, retrieved documents, tool access and the model supply chain. Controls have to sit around the model, not only inside it.',
+   does:['Contribute to AI/ML and LLM-enabled transaction monitoring and fraud detection in a regulated bank.','Design AI features behind clear service boundaries, with access control and audit trails.','Keep a human in the loop for decisions that affect customers.','Research AI security, privacy-preserving machine learning and trustworthy AI.'],
+   winh:'Where this stands', win:'Applied in AI-enabled fraud monitoring, and an active research interest that I am building toward deeper specialization.',
+   lanes:[{l:'Untrusted input',n:['User prompt','Retrieved documents','Tool output'],p:1},{l:'Guardrails',n:['Input filtering','Permission-aware retrieval','Instruction and data separation']},{l:'Model',n:['!LLM','Output validation','Policy checks']},{l:'Action',n:['Least-privilege tools','Human approval','Rate limits']},{l:'Evidence',n:['Audit trace','Red-team tests','Monitoring'],p:1}],
+   trh:'Key risks and the controls I look for',
+   note:'Risk themes follow the OWASP Top 10 for LLM Applications.',
+   tr:[['Prompt injection','Treat user input, retrieved documents and tool output as untrusted. Keep instructions separate from data and limit what the model can trigger.'],['Sensitive data disclosure','Send the minimum data, redact where possible, and enforce the user’s permissions before retrieval, not after.'],['Excessive agency','Give agents narrow, least-privilege tools and require human approval for high-impact actions.'],['Improper output handling','Validate and encode model output before it reaches databases, APIs or screens.'],['Data and supply-chain poisoning','Vet datasets, models and libraries, pin versions, and re-run evaluation sets when anything changes.'],['Unbounded consumption','Apply rate limits, quotas and token or cost budgets per user and per service.']]}
 ];
 
 const EDU = {
@@ -699,6 +765,28 @@ function selectArch(i){
     <ul class="trade">${a.tr.map(x=>`<li><b>${x[0]}</b>${x[1]}</li>`).join('')}</ul>`;
 }
 
+function renderSecurity(){
+  const list = $('#secTabs');
+  list.innerHTML = SECURITY.map((s,i) => `<button class="pill" role="tab" id="st-${i}" aria-selected="${i===0}" aria-controls="secPanel" tabindex="${i===0?0:-1}" data-i="${i}">${s.t}</button>`).join('');
+  list.addEventListener('click', ev => { const b = ev.target.closest('.pill'); if (b) selectSec(+b.dataset.i); });
+  list.addEventListener('keydown', ev => tabKeys(list, ev, selectSec));
+  selectSec(0);
+}
+function selectSec(i){
+  $$('#secTabs .pill').forEach((b,j) => { b.setAttribute('aria-selected', String(j===i)); b.tabIndex = j===i?0:-1; });
+  const s = SECURITY[i], p = $('#secPanel');
+  p.setAttribute('aria-labelledby', 'st-'+i);
+  const node = n => n[0]==='!' ? `<span class="node hi">${n.slice(1)}</span>` : `<span class="node">${n}</span>`;
+  const lane = l => `<div class="lane"><span class="lane-label">${l.l}</span><div class="flow">${l.n.map(node).join(l.p?'':'<span class="arrow" aria-hidden="true">&rarr;</span>')}</div></div>`;
+  p.innerHTML = `
+    <div class="arch-top"><div><h3>${s.t}</h3><p class="sum">${s.sum}</p></div><div class="chips"><span class="chip hi">${s.status}</span><span class="chip">Conceptual diagram</span></div></div>
+    <div class="cols sec-cols"><div><h4>What I do</h4>${dots(s.does)}</div><div class="sec-win"><h4>${s.winh}</h4><p>${s.win}</p></div></div>
+    <div class="diagram" role="group" aria-label="${s.t} conceptual diagram, layers from top to bottom">${s.lanes.map(lane).join('')}</div>
+    <p class="trade-h">${s.trh}</p>
+    ${s.note ? `<p class="note sec-note">${s.note}</p>` : ''}
+    <ul class="trade">${s.tr.map(x=>`<li><b>${x[0]}</b>${x[1]}</li>`).join('')}</ul>`;
+}
+
 function renderInsights(){
   $('#insGrid').innerHTML = INSIGHTS.map(a => `<article class="card lift ins"><p class="cat">${a.c}</p><h3>${a.t}</h3><p>${a.d}</p>
     <div class="meta"><span>${a.date || ''}</span>${a.url?`<a href="${a.url}" target="_blank" rel="noopener">Read on LinkedIn &#8599;</a>`:'<span></span>'}</div></article>`).join('');
@@ -760,7 +848,7 @@ function initNet(){
 }
 
 /* ---------------- boot ---------------- */
-renderLinks(); renderExpertise(); renderExperience(); renderCases(); renderArch(); renderInsights(); renderEdu();
+renderLinks(); renderExpertise(); renderExperience(); renderCases(); renderArch(); renderSecurity(); renderInsights(); renderEdu();
 initNav(); initNet();
 $('#year').textContent = new Date().getFullYear();
 </script>
